@@ -57,3 +57,46 @@ This part can be completed simultaneously.
 Go to your git repo on Github and examine the different branches (master, a_branch, b_branch) and see what everything looks like. 
 
 ## Part 2 (Resolving Conflicts)
+
+This part needs to be completed sequentially. 
+
+### A (Step 3)
+1. Click Pull Request -> New Pull Request -> `a_branch` -> Create Pull Request 
+1. Then **Merge** your pull request to master (there should not be any conflicts)
+1. Navigate back to master branch and observe your changes in test.cpp
+1. **WAIT FOR B TO FINISH THEIR PART**
+1. update your code by calling `git pull origin master`
+
+### B (Step 3)
+1. Go to terminal and type: `git branch` to make sure that you are on `b_branch`
+    1. If not, type `git checkout b_branch`
+1. Type `git pull origin master`
+    1. You should see: 
+    ```Auto-merging test.cpp CONFLICT (content): 
+    Merge conflict in test.cpp Automatic merge failed; fix conflicts and then commit the result.```
+1. Open test.cpp, you should see something like:
+```
+int main(int argc, const char * argv[]) {
+
+    cout << "Git Test\n";
+<<<<<<< HEAD
+    cout << "from b branch" << endl;
+=======
+    cout << "from a branch" << endl;
+>>>>>>> 90e7d8c67a14f6894e3199c8e71d633b3c68e4e2
+    return 0;
+}
+```
+1. Go ahead and modify the file to return it to correct c++ syntax by deleting the added lines
+    1. make sure that `B added cout` is above `A added cout`
+1. Save the file
+1. Add, Commit and Push to b_branch:
+    1. `git add test.cpp`
+    1. `git commit -m "fixed conflict"`
+    1. `git push origin b_branch`
+
+1. Go back to github.com and refresh the repo page.
+1. You should see a yellow header with your branch name on it. Click **Compare & pull request**
+1. Click create merge request, and merge the branch to master by clicking merge-> confirm. 
+1. Go back to master branch and observe your changes
+
