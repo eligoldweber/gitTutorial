@@ -32,16 +32,7 @@ In this setup, Parter B needs to wait until Parter A has finished their Step1.
 1. **Clone** your new repo by copying the url in the Clone/Download button using `git clone <url>`
 
 ## Part 1 (Branches)
-
-### B (Step 2)
-1. Make sure you are in the same directory in terminal as before.
-1. Use the command `git checkout -b b_branch` to checkout your own branch.
-1. Open **test.cpp** and the following line to main after "Git Test" line
-1. `cout << "from b_branch" << endl;
-1. Add, Commit and Push to b_branch:
-    1. `git add test.cpp`
-    1. `git commit -m "B added cout"`
-    1. `git push`
+This part can be completed simultaneously. 
 
 ### A (Step 2)
 1. Make sure you are in the same directory in terminal as before.
@@ -51,6 +42,18 @@ In this setup, Parter B needs to wait until Parter A has finished their Step1.
 1. Add, Commit and Push to b_branch:
     1. `git add test.cpp`
     1. `git commit -m "A added cout"`
-    1. `git push`
+    1. `git push origin a_branch`
+    
+### B (Step 2)
+1. Make sure you are in the same directory in terminal as before.
+1. Use the command `git checkout -b b_branch` to checkout your own branch.
+1. Open **test.cpp** and the following line to main after "Git Test" line
+1. `cout << "from b_branch" << endl;
+1. Add, Commit and Push to b_branch:
+    1. `git add test.cpp`
+    1. `git commit -m "B added cout"`
+    1. `git push origin b_branch`
 
-## Part 3 (Resolving Conflicts)
+Go to your git repo on Github and examine the different branches (master, a_branch, b_branch) and see what everything looks like. 
+
+## Part 2 (Resolving Conflicts)
