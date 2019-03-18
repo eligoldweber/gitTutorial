@@ -15,7 +15,8 @@ Only one person will need to setup the activity:
     1. On Windows, select Start and type Git Bash. Select Git Bash to open the terminal.
 1. Use the `cd` command to navigate to the directory that you want the repo to belong.
 1. **Clone** your new repo by copying the url in the Clone/Download button using `git clone <url>`
-1. **Download** this repository, and drag and drop all files from the downloaded folder into your local repo
+1. **Download** this repository as a .zip.
+1. Unzip and drag and drop all files from the downloaded folder into your local repo
 1. Enter your repo in terminal using `cd <repo name>`
 1. Type the following commands:
     1. `git add *`
