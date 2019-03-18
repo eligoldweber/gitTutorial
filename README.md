@@ -38,7 +38,7 @@ This part can be completed simultaneously.
 1. Make sure you are in the same directory in terminal as before.
 1. Use the command `git checkout -b a_branch` to checkout your own branch.
 1. Open **test.cpp** and the following line to main after "Git Test" line
-1. `cout << "from a_branch" << endl;
+1. `cout << "from a_branch" << endl;`
 1. Add, Commit and Push to b_branch:
     1. `git add test.cpp`
     1. `git commit -m "A added cout"`
@@ -48,7 +48,7 @@ This part can be completed simultaneously.
 1. Make sure you are in the same directory in terminal as before.
 1. Use the command `git checkout -b b_branch` to checkout your own branch.
 1. Open **test.cpp** and the following line to main after "Git Test" line
-1. `cout << "from b_branch" << endl;
+1. `cout << "from b_branch" << endl;`
 1. Add, Commit and Push to b_branch:
     1. `git add test.cpp`
     1. `git commit -m "B added cout"`
