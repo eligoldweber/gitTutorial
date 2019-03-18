@@ -38,6 +38,19 @@ In this setup, Parter B needs to wait until Parter A has finished their Step1.
 1. Use the command `git checkout -b b_branch` to checkout your own branch.
 1. Open **test.cpp** and the following line to main after "Git Test" line
 1. `cout << "from b_branch" << endl;
+1. Add, Commit and Push to b_branch:
+    1. `git add test.cpp`
+    1. `git commit -m "B added cout"`
+    1. `git push`
 
+### A (Step 2)
+1. Make sure you are in the same directory in terminal as before.
+1. Use the command `git checkout -b a_branch` to checkout your own branch.
+1. Open **test.cpp** and the following line to main after "Git Test" line
+1. `cout << "from a_branch" << endl;
+1. Add, Commit and Push to b_branch:
+    1. `git add test.cpp`
+    1. `git commit -m "A added cout"`
+    1. `git push`
 
 ## Part 3 (Resolving Conflicts)
