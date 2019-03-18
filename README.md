@@ -32,7 +32,7 @@ In this setup, Parter B needs to wait until Parter A has finished their Step1.
 1. **Clone** your new repo by copying the url in the Clone/Download button using `git clone <url>`
 
 ## Part 1 (Branches)
-This part can be completed simultaneously. 
+This part should be completed simultaneously. 
 
 ### A (Step 2)
 1. Make sure you are in the same directory in terminal as before.
@@ -68,6 +68,7 @@ This part needs to be completed sequentially.
 1. update your code by calling `git pull origin master`
 
 ### B (Step 3)
+1. **WAIT FOR A TO FINISH #3 in Step 3**
 1. Go to terminal and type: `git branch` to make sure that you are on `b_branch`
     1. If not, type `git checkout b_branch`
 1. Type `git pull origin master`
